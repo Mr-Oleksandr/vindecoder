@@ -1,20 +1,23 @@
-import { IArticle } from '../Types/Article'
+import {IArticle} from '../types/Article';
 
 export enum ActionType {
-    GET_ARTICLES_PENDING = 'GET_ARTICLES_PENDING',
-    GET_ARTICLES_SUCCESS = 'GET_ARTICLES_SUCCESS',
-    GET_ARTICLES_FAIL = 'GET_ARTICLES_FAIL',
+    GET_VINCODE_PENDING = 'GET_VINCODE_PENDING',
+    GET_VINCODE_SUCCESS = 'GET_VINCODE_SUCCESS',
+    GET_VINCODE_FAIL = 'GET_VINCODE_FAIL',
 }
 
 interface actionPending {
-    type: ActionType.GET_ARTICLES_PENDING
+    type: ActionType.GET_VINCODE_PENDING
 }
 interface actionSuccess {
-    type: ActionType.GET_ARTICLES_SUCCESS
-    payload: IArticle[]
+    type: ActionType.GET_VINCODE_SUCCESS
+    payload: {
+        Results: IArticle[];
+        SearchCriteria:number;
+    }
 }
 interface actionFail {
-    type: ActionType.GET_ARTICLES_FAIL
+    type: ActionType.GET_VINCODE_FAIL
     payload: string
 }
 

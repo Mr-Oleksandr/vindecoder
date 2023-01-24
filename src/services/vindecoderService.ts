@@ -1,6 +1,3 @@
-
-import { ArticleQueryParams } from '../Types/Article';
-
 export default class VinDecoderServices {
     urlBase = 'https://vpic.nhtsa.dot.gov/api/'
     getData = async (url: string) => {
@@ -16,4 +13,21 @@ export default class VinDecoderServices {
              console.log(error)
          }
   }
+    getVariableList = async () => {
+        try {
+            const getVehicleList = await this.getData('/vehicles/getvehiclevariablelist?format=json')
+            return getVehicleList
+        } catch (error) {
+            console.log(error)
+        }
+    }
+    getVariable = async (id:string) => {
+        try {
+            const getVehicleList = await this.getData(`/vehicles/getvehiclevariablelist/${id}?format=json`)
+            return getVehicleList
+        } catch (error) {
+            console.log(error)
+        }
+    }
+
 }

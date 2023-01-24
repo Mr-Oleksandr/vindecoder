@@ -4,7 +4,8 @@ import { State } from './Reducer'
 import { useDispatch } from 'react-redux'
 
 type AppDispatch = ThunkDispatch<State, any, AnyAction>
-export const actyionDispatch = () => {
+
+export const actionDispatch = () => {
     const dispatch: AppDispatch = useDispatch()
     return {
         dispatch

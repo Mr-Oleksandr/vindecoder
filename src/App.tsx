@@ -1,9 +1,10 @@
 import React from 'react';
+import MainRoutes from './routes/MainRoutes';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-   as
+        <MainRoutes/>
     </div>
   );
 }
