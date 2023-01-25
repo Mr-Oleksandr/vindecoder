@@ -1,27 +1,27 @@
 {
   "files": {
     "main.css": "/vindecoder/static/css/main.4871e340.css",
-    "main.js": "/vindecoder/static/js/main.ad064e47.js",
+    "main.js": "/vindecoder/static/js/main.352a5f33.js",
     "static/css/131.08e1c27d.chunk.css": "/vindecoder/static/css/131.08e1c27d.chunk.css",
-    "static/js/131.41c49bf0.chunk.js": "/vindecoder/static/js/131.41c49bf0.chunk.js",
+    "static/js/131.3bd87e1d.chunk.js": "/vindecoder/static/js/131.3bd87e1d.chunk.js",
     "static/css/457.b5301968.chunk.css": "/vindecoder/static/css/457.b5301968.chunk.css",
-    "static/js/457.7ecc0ebd.chunk.js": "/vindecoder/static/js/457.7ecc0ebd.chunk.js",
+    "static/js/457.2e5538c0.chunk.js": "/vindecoder/static/js/457.2e5538c0.chunk.js",
     "static/css/980.a44a34e6.chunk.css": "/vindecoder/static/css/980.a44a34e6.chunk.css",
-    "static/js/980.61c10458.chunk.js": "/vindecoder/static/js/980.61c10458.chunk.js",
+    "static/js/980.1462cc69.chunk.js": "/vindecoder/static/js/980.1462cc69.chunk.js",
     "static/js/776.91025490.chunk.js": "/vindecoder/static/js/776.91025490.chunk.js",
     "index.html": "/vindecoder/index.html",
     "main.4871e340.css.map": "/vindecoder/static/css/main.4871e340.css.map",
-    "main.ad064e47.js.map": "/vindecoder/static/js/main.ad064e47.js.map",
+    "main.352a5f33.js.map": "/vindecoder/static/js/main.352a5f33.js.map",
     "131.08e1c27d.chunk.css.map": "/vindecoder/static/css/131.08e1c27d.chunk.css.map",
-    "131.41c49bf0.chunk.js.map": "/vindecoder/static/js/131.41c49bf0.chunk.js.map",
+    "131.3bd87e1d.chunk.js.map": "/vindecoder/static/js/131.3bd87e1d.chunk.js.map",
     "457.b5301968.chunk.css.map": "/vindecoder/static/css/457.b5301968.chunk.css.map",
-    "457.7ecc0ebd.chunk.js.map": "/vindecoder/static/js/457.7ecc0ebd.chunk.js.map",
+    "457.2e5538c0.chunk.js.map": "/vindecoder/static/js/457.2e5538c0.chunk.js.map",
     "980.a44a34e6.chunk.css.map": "/vindecoder/static/css/980.a44a34e6.chunk.css.map",
-    "980.61c10458.chunk.js.map": "/vindecoder/static/js/980.61c10458.chunk.js.map",
+    "980.1462cc69.chunk.js.map": "/vindecoder/static/js/980.1462cc69.chunk.js.map",
     "776.91025490.chunk.js.map": "/vindecoder/static/js/776.91025490.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4871e340.css",
-    "static/js/main.ad064e47.js"
+    "static/js/main.352a5f33.js"
   ]
 }
