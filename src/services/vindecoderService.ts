@@ -7,7 +7,7 @@ export default class VinDecoderServices {
    };
    getDecodeVin = async (vinCode: string) => {
       try {
-         const articles = await this.getData(`vehicles/decodevinasd/${vinCode}?format=json`);
+         const articles = await this.getData(`vehicles/decodevin/${vinCode}?format=json`);
          return articles;
       } catch (error) {
          throw new Error();
