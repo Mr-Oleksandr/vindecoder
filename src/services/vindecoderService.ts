@@ -7,10 +7,10 @@ export default class VinDecoderServices {
    };
    getDecodeVin = async (vinCode: string) => {
       try {
-         const articles = await this.getData(`vehicles/decodevin/${vinCode}?format=json`);
+         const articles = await this.getData(`vehicles/decodevinasd/${vinCode}?format=json`);
          return articles;
       } catch (error) {
-         console.log(error);
+         throw new Error();
       }
    };
    getVariableList = async () => {
@@ -18,7 +18,7 @@ export default class VinDecoderServices {
          const getVehicleList = await this.getData('/vehicles/getvehiclevariablelist?format=json');
          return getVehicleList;
       } catch (error) {
-         console.log(error);
+         throw new Error();
       }
    };
    getVariable = async (id: string) => {
@@ -28,7 +28,7 @@ export default class VinDecoderServices {
          );
          return getVehicleList;
       } catch (error) {
-         console.log(error);
+         throw new Error();
       }
    };
 }

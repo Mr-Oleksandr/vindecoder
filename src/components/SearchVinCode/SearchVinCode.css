@@ -32,6 +32,7 @@
     border-radius: 10px;
     color: #333;
     transition: .3s ease;
+    height: 40px;
 
 }
 .submit:hover{

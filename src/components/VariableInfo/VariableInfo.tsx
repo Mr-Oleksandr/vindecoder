@@ -11,7 +11,7 @@ interface VariableInfoProps {
 const VariableInfo: FC<VariableInfoProps> = ({ id }) => {
    const { variable, loading, error } = useFetchArticleById(id);
 
-   if (loading) {
+   if (loading && !error) {
       return <Loader />;
    }
    if (!variable?.length) {
