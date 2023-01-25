@@ -4,15 +4,15 @@ Frontend environment for building JavaScript applications
 
 Includes the following features...
 
--React JS
--Redux, Redux Thunk
--Css
--Custom fetch hooks
--React Router
--Ready class services
--Caching
--Suspense, lazy-load
--Run Dev Server (Port 3000)
+- React JS
+- Redux, Redux Thunk
+- Css
+- Custom fetch hooks
+- React Router
+- Ready class services
+- Caching
+- Suspense, lazy-load
+- Run Dev Server (Port 3000)
 
 # Getting Started with Create React App
 
