@@ -1,0 +1,8 @@
+.variable{
+    cursor: pointer;
+    border-bottom: 1px solid #97abbb;
+}
+.variable-content{
+    height: 800px;
+    overflow-x: scroll;
+}

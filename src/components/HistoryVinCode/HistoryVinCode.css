@@ -1,0 +1,23 @@
+.li-item {
+    padding: 8px 12px;
+    border-bottom: 1px solid #edf1f5;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+}
+
+.history-vin-btn {
+    border: 1px solid #97abbb;
+    background: #fff;
+    padding: 9px 12px;
+    border-radius: 10px;
+    color: #333;
+    transition: .3s ease;
+    width: 200px;
+}
+
+.history-vin-btn:hover {
+    background: #323f4a;
+    color: #fff;
+}

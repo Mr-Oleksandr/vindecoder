@@ -4,13 +4,13 @@ import SearchVinCode from '../../components/SearchVinCode/SearchVinCode';
 import HistoryVinCode from '../../components/HistoryVinCode/HistoryVinCode';
 
 const DecodeVin = () => {
-    return (
-        <div>
-            <SearchVinCode/>
-            <HistoryVinCode/>
-            <VehicleCodeList/>
-        </div>
-    );
+   return (
+      <div className='decode-page'>
+         <SearchVinCode />
+         <HistoryVinCode />
+         <VehicleCodeList />
+      </div>
+   );
 };
 
 export default DecodeVin;

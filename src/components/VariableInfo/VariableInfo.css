@@ -1,0 +1,12 @@
+table, th, td{
+    border: 1px solid #cbd2d9;
+    border-collapse: collapse;
+    padding: 8px;
+    max-width: 1440px;
+    margin-top: 40px;
+}
+.variable-info-container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}

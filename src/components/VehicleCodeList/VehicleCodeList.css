@@ -1,0 +1,10 @@
+.vehicle-list-info {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+.vehicle-list-container{
+    display: flex;
+    height: 400px;
+    overflow-y: scroll;
+}
