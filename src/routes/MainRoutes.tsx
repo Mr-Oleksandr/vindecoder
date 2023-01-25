@@ -11,9 +11,9 @@ const MainRoutes = () => {
       <div>
          <Suspense fallback={<Loader />}>
             <Routes>
-               <Route path='/' element={<DecodeVinPage />} />
-               <Route path='/variables' element={<VariablesPage />} />
-               <Route path='/variables/:id' element={<VariablePage />} />
+               <Route path='/vindecoder' element={<DecodeVinPage />} />
+               <Route path='/vindecoder/variables' element={<VariablesPage />} />
+               <Route path='/vindecoder/variables/:id' element={<VariablePage />} />
             </Routes>
          </Suspense>
       </div>
