@@ -20,7 +20,7 @@ interface actionSuccess {
 
 interface actionFail {
    type: ActionType.GET_VINCODE_FAIL;
-   payload: string;
+   payload: string | null;
 }
 
 export type Action = actionPending | actionSuccess | actionFail;

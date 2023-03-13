@@ -1,9 +1,13 @@
 export default class VinDecoderServices {
    urlBase = 'https://vpic.nhtsa.dot.gov/api/';
    getData = async (url: string) => {
-      const data = await fetch(`${this.urlBase}/${url}`);
-      const response = await data.json();
-      return response;
+      try {
+         const data = await fetch(`${this.urlBase}/${url}`);
+        const response = await data.json();
+        return response;
+      } catch (error) {
+         throw new Error();
+      }
    };
    getDecodeVin = async (vinCode: string) => {
       try {

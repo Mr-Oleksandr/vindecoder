@@ -1,0 +1,9 @@
+declare module '@avtopro/button/dist/index';
+declare module  '@avtopro/select/dist/index';
+declare module '@avtopro/placeholder-robot/dist/index';
+declare module '@avtopro/preloader/dist/index';
+declare module '@avtopro/icons/dist/svg/arrow_down.svg';
+declare module '@avtopro/text-input/dist/index';
+declare module '@avtopro/form-frame/dist/index';
+declare module '@avtopro/modal/dist/index';
+declare module '@avtopro/tooltip/dist/index';

@@ -13,10 +13,12 @@
 .search-form{
     display: flex;
     flex-direction: column;
+    width: 250px;
+    gap: 10px;
 }
 .form-control{
     padding: 9px 12px;
-    width: 250px;
+    width: 250px!important;
     border-radius: 10px;
     border: 1px solid #cbd2d9;
     margin-bottom: 10px;
@@ -25,17 +27,22 @@
     margin-bottom: 10px;
 }
 .submit{
-    width: 280px;
     border: 1px solid #cbd2d9;
     background: #fff;
     padding: 9px 12px;
     border-radius: 10px;
     color: #333;
     transition: .3s ease;
-    height: 40px;
+    height: 20px;
+    
 
 }
 .submit:hover{
     color: #edf1f5;
-    background: #323f4a;
+}
+.btn-icon{
+    width: 24px;
+    height: 24px;
+    margin-left: 20px;
+    background-image: url('@avtopro/icons/dist/svg/add_search.svg');
 }

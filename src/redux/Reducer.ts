@@ -11,7 +11,7 @@ export interface State {
 const initialState = {
    articles: [],
    vinCode: [],
-   loading: true,
+   loading: false,
    error: null,
 };
 

@@ -10,8 +10,15 @@ export const getArticles = (vinCode: string) => {
          dispatch({ type: ActionType.GET_VINCODE_PENDING });
          const response = await swapiDecoder.getDecodeVin(vinCode);
          dispatch({ type: ActionType.GET_VINCODE_SUCCESS, payload: response });
-      } catch (err: any) {
-         dispatch({ type: ActionType.GET_VINCODE_FAIL, payload: err.message });
+      } catch (error: any) {
+         dispatch({ type: ActionType.GET_VINCODE_FAIL, payload: error });
       }
    };
 };
+
+export const resetError = () => {
+   return async (dispatch: Dispatch<Action>) => {
+         return dispatch({ type: ActionType.GET_VINCODE_FAIL, payload: null });
+   
+   };
+}

@@ -1,7 +1,7 @@
 import React from 'react';
 import { useFetchArticleById } from '../../hooks/useFetchVariables';
 import { useNavigate } from 'react-router-dom';
-import Loader from '../../ui/Loader/Loader';
+import RobotPreloader from '@avtopro/preloader/dist/index';
 import './VariableList.css';
 
 const VariableList = () => {
@@ -9,7 +9,7 @@ const VariableList = () => {
    const navigate = useNavigate();
 
    if (loading && !error) {
-      return <Loader />;
+      return <RobotPreloader />;
    }
    return (
       <div className='variable-content'>

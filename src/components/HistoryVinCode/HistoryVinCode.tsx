@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+import Select,{Option} from '@avtopro/select/dist/index'
 import { nanoid } from 'nanoid';
 import { useSelector } from 'react-redux';
 import { RootState } from '../../store/store';
@@ -10,26 +11,24 @@ const HistoryVinCode = () => {
    const { vinCode } = useSelector((state: RootState) => state);
    const { dispatch } = actionDispatch();
 
-   const handleCLick = (item: string) => {
-      dispatch(getArticles(item.replace('VIN:', '')));
+   const handleChange = (item: string) => {
+      dispatch(getArticles(item[0].replace('VIN:', '')));
    };
+
 
    return (
       <div>
          <h3>History of search results</h3>
-         <ul>
+         <Select onChange={(_: any, newValue: string) => handleChange(newValue)} defaultValue={vinCode[0] ? vinCode[0] : 'Select vin'}>
             {!!vinCode &&
                vinCode.map((item) => {
                   return (
-                     <li key={nanoid()} className='li-item'>
+                     <Option key={nanoid()} value={item} className='li-item' >
                         {item}
-                        <button className='history-vin-btn' onClick={() => handleCLick(item)}>
-                           Show
-                        </button>
-                     </li>
+                     </Option>
                   );
                })}
-         </ul>
+         </Select>
       </div>
    );
 };
