@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import { getArticles, resetError } from '../../redux/actions';
 import { actionDispatch } from '../../redux/actionsDispatch';
 import { useSelector } from 'react-redux';
@@ -22,7 +22,8 @@ const SearchVinCode = () => {
    const { loading, error } = useSelector((state: RootState) => state);
 
    
-   const onSubmit = async (data: any) => {
+   const onSubmit = async (data:any) => {
+      console.log(data)
       try {
          await dispatch(getArticles(data.text));
       } catch (e) {
