@@ -45,6 +45,7 @@ export const articleReducer = (state: State = initialState, action: Action): Sta
          return {
             ...state,
             error: action.payload,
+            loading:false
          };
 
       default:

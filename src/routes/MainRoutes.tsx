@@ -8,7 +8,7 @@ const VariablePage = lazy(() => import('../pages/VariablePage/VariablePage'));
 const MainRoutes = () => {
    return (
       <div>
-         <Suspense fallback={<RobotPreloader />}>
+         <Suspense fallback={<RobotPreloader fixed/>}>
             <Routes>
                <Route path='/vindecoder' element={<DecodeVinPage />} />
                <Route path='/vindecoder/variables' element={<VariablesPage />} />

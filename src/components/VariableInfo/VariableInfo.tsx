@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import { nanoid } from 'nanoid';
 import { useFetchArticleById } from '../../hooks/useFetchVariable';
-import Loader from '../../ui/Loader/Loader';
+import RobotPreloader from '@avtopro/preloader/dist/index';
 import './VariableInfo.css';
 
 interface VariableInfoProps {
@@ -12,7 +12,7 @@ const VariableInfo: FC<VariableInfoProps> = ({ id }) => {
    const { variable, loading, error } = useFetchArticleById(id);
 
    if (loading && !error) {
-      return <Loader />;
+      return <RobotPreloader />;
    }
    if (!variable?.length) {
       return <h3>No Information</h3>;

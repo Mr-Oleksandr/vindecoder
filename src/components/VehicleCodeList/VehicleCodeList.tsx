@@ -7,13 +7,12 @@ import './VehicleCodeList.css';
 
 const VehicleCodeList = () => {
    const { articles, loading } = useSelector((state: RootState) => state);
-   console.log(loading)
    if (!articles?.length) {
       return <div>enter vin code</div>;
    }
 
    if (loading) {
-      return <RobotPreloader />;
+      return <RobotPreloader/>;
    }
 
    return (

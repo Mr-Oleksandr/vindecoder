@@ -9,7 +9,7 @@ const VariableList = () => {
    const navigate = useNavigate();
 
    if (loading && !error) {
-      return <RobotPreloader />;
+      return <RobotPreloader/>;
    }
    return (
       <div className='variable-content'>

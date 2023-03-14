@@ -21,7 +21,6 @@
     "plugins": ["react", "react-hooks", "@typescript-eslint", "prettier"],
     "rules": {
         "react/react-in-jsx-scope": "off",
-
         "spaced-comment": "error",
         "quotes": ["error", "single"],
         "no-duplicate-imports": "error",
@@ -32,7 +31,7 @@
         "jsx-a11y/no-noninteractive-element-to-interactive-role": "off", // Interactive HTML elements indicate controls in the user interface. Interactive elements include <a href>, <button>, <input>, <select>, <textarea>.
         "jsx-a11y/control-has-associated-label": "off", // This oprion is enforce that a control (an interactive element) has a text label.
         "jsx-a11y/mouse-events-have-key-events": "off", // This otion is enforce onmouseover/onmouseout are accompanied by onfocus/onblur.
-        "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }], // The set of allowed extensions is configurable. In this rule '.jsx' and '.js' is allowed.
+        "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx", ".ts", ".tsx"] }], // The set of allowed extensions is configurable. In this rule '.jsx' and '.js' is allowed.
         "no-unused-vars": "warn", // This rule is disallow unused variables.
         "no-confusing-arrow": "off", // This rfule is disallow arrow functions where they could be confused with comparisons.
         "arrow-parens": "off", // This option is require parentheses around arrow function arguments.

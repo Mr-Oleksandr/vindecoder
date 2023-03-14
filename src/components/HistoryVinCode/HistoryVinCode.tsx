@@ -19,7 +19,7 @@ const HistoryVinCode = () => {
    return (
       <div>
          <h3>History of search results</h3>
-         <Select onChange={(_: any, newValue: string) => handleChange(newValue)} defaultValue={vinCode[0] ? vinCode[0] : 'Select vin'}>
+         <Select onChange={(_: any, newValue: string) => handleChange(newValue)} defaultValue={vinCode[0]}>
             {!!vinCode &&
                vinCode.map((item) => {
                   return (
