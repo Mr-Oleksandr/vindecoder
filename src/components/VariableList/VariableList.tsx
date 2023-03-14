@@ -17,7 +17,7 @@ const VariableList = () => {
             return (
                <article
                   key={item.ID}
-                  onClick={() => navigate(`/vindecoder/variables/${item.ID}`)}
+                  onClick={() => navigate(`/variables/${item.ID}`)}
                   className='variable'
                >
                   <h2>{item.Name}</h2>
