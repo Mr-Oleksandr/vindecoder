@@ -23,7 +23,6 @@ const SearchVinCode = () => {
 
    
    const onSubmit = async (data:any) => {
-      console.log(data)
       try {
          await dispatch(getArticles(data.text));
       } catch (e) {
