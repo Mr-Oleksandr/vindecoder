@@ -26,7 +26,7 @@ const SearchVinCode = () => {
       try {
          await dispatch(getArticles(data.text));
       } catch (e) {
-         console.log(e)
+        throw Error();
       }
    };
 
