@@ -7,7 +7,7 @@ const Header = () => {
    return (
       <header className='header'>
          <nav className='breadcrumbs'>
-            <Link to='/vindecoder' className='breadcrumbs__item'>
+            <Link to='/' className='breadcrumbs__item'>
                VINDECODER
             </Link>
             <Link to='/variables' className='breadcrumbs__item'>
