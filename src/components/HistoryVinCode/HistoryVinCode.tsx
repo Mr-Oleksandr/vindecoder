@@ -19,11 +19,11 @@ const HistoryVinCode = () => {
    return (
       <div>
          <h3>History of search results</h3>
-         <Select onChange={(_: any, newValue: string) => handleChange(newValue)} defaultValue={vinCode[0]}>
+         <Select onChange={(_: any, newValue: string) => handleChange(newValue)} defaultValue={vinCode[0]} placeholder="Select vin code" disabled={vinCode.length ? false : true }>
             {!!vinCode &&
                vinCode.map((item) => {
                   return (
-                     <Option key={nanoid()} value={item} className='li-item' >
+                     <Option key={nanoid()} value={item} >
                         {item}
                      </Option>
                   );

@@ -45,14 +45,11 @@ const SearchVinCode = () => {
       
    return (
       <form onSubmit={handleSubmit(onSubmit)} className='search-form'>
-         <label className='label' htmlFor='text'>
-            Enter vin code
-         </label>
         <FormFrame pending={loading ? true : false}>
         <TextInput
             id="text" 
             className='form-control'
-            placeholder='1FTFW1CT5DFC10312'
+            placeholder='Enter vin code'
             {...register('text', { required: true, maxLength: 17, minLength: 17 })}
          />
         </FormFrame>
@@ -70,4 +67,4 @@ const SearchVinCode = () => {
    );
 };
 
-export default SearchVinCode;
+export default SearchVinCode; 

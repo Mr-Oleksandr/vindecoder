@@ -4,11 +4,10 @@
 .error{
     display: block !important;
     color: #a84646;
-    border-bottom: 1px solid #a84646;
     margin-bottom: 5px;
     padding: 5px;
     width: 250px;
-    border-radius: 10px;
+
 }
 .search-form{
     display: flex;
@@ -18,7 +17,6 @@
 }
 .form-control{
     padding: 9px 12px;
-    width: 250px!important;
     border-radius: 10px;
     border: 1px solid #cbd2d9;
     margin-bottom: 10px;
@@ -29,10 +27,7 @@
 }
 .submit{
     border: 1px solid #cbd2d9;
-    background: #fff;
     padding: 9px 12px;
-    border-radius: 10px;
-    color: #333;
     transition: .3s ease;
     height: 20px;
     
