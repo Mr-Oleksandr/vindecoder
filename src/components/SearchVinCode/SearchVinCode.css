@@ -7,7 +7,7 @@
     border-bottom: 1px solid #a84646;
     margin-bottom: 5px;
     padding: 5px;
-    width: 270px;
+    width: 250px;
     border-radius: 10px;
 }
 .search-form{
@@ -25,6 +25,7 @@
 }
 .label{
     margin-bottom: 10px;
+    font-size: 21px;
 }
 .submit{
     border: 1px solid #cbd2d9;

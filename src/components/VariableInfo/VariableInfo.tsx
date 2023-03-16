@@ -20,7 +20,7 @@ const VariableInfo: FC<VariableInfoProps> = ({ id }) => {
 
    return (
       <div className='variable-info-container'>
-         <table>
+         <table className='variable-info__table'>
             <thead>
                <tr>
                   <th>ElementName</th>

@@ -53,7 +53,7 @@ const SearchVinCode = () => {
             id="text" 
             className='form-control'
             placeholder='1FTFW1CT5DFC10312'
-            {...register('text', { required: true, maxLength: 17 })}
+            {...register('text', { required: true, maxLength: 17, minLength: 17 })}
          />
         </FormFrame>
          {errors.text && errors.text.type === 'required' && (
@@ -61,6 +61,9 @@ const SearchVinCode = () => {
          )}
          {errors.text && errors.text.type === 'maxLength' && (
             <span className='error'>Max length 17</span>
+         )}
+          {errors.text && errors.text.type === 'minLength' && (
+            <span className='error'>Min length 17</span>
          )}
          <Button type='submit' className='submit' theme="blue" uppercase>Search Vin <i className='btn-icon'></i></Button>
       </form>
