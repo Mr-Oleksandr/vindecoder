@@ -16,6 +16,12 @@ jobs:
     name: Build and Deploy Job
     steps:
       - uses: actions/checkout@v2
+      - name: Authenticate npm
+          # Replace basic .npmrc with .npmrc for GitHub Actions
+          # and substitute "password" parameter with secret token
+        run: |
+          cat .npmrc_github > .npmrc
+          sed -i 's/NPM_TOKEN/${{ secrets.NPM_TOKEN }}/g' .npmrc
         with:
           submodules: true
       - name: Build And Deploy
