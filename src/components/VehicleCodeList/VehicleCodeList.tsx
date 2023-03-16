@@ -8,7 +8,7 @@ import './VehicleCodeList.css';
 const VehicleCodeList = () => {
    const { articles, loading } = useSelector((state: RootState) => state);
    if (!articles?.length) {
-      return <div></div>;
+      return <div>enter vin code</div>;
    }
 
    if (loading) {
